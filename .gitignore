@@ -1,0 +1,10 @@
+.deploy-state/
+node_modules/
+dist/
+.env
+
+# QA screenshots from the build rounds — not part of the project
+screenshots/
+shots/
+.shots/
+evidence/

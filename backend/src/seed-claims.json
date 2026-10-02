@@ -1,0 +1,391 @@
+{
+ "seed-priya": {
+  "status": "review",
+  "narrative": "I was cancelled at 11am after fasting from midnight. I drove 34 miles each way to Northfield, so 68 miles in total. Parking at the hospital cost 9.50 pounds and I have the ticket. I am self-employed and lost a full working day, 8 hours at 22 pounds an hour, and I can show invoices I had to postpone. I paid a neighbour 40 pounds to look after my two children for the day, and I have the bank transfer.",
+  "lines": [
+   {
+    "category": "travel",
+    "description": "68 miles driven to Northfield hospital and back",
+    "miles": 68,
+    "for_whom": "patient",
+    "escort_required": false,
+    "evidence": "none",
+    "justification": "Patient drove 34 miles each way for the cancelled operation."
+   },
+   {
+    "category": "parking",
+    "description": "Hospital parking at Northfield",
+    "amount_gbp": 9.5,
+    "for_whom": "patient",
+    "escort_required": false,
+    "evidence": "ticket",
+    "justification": "Patient paid for parking on the day of the cancelled operation and holds the ticket."
+   },
+   {
+    "category": "wages",
+    "description": "Self-employed lost working day, 8 hours at £22/hour",
+    "hours": 8,
+    "hourly_rate_gbp": 22,
+    "for_whom": "patient",
+    "escort_required": false,
+    "evidence": "business_records",
+    "justification": "Patient is self-employed and lost a full working day due to the cancelled operation, with postponed invoices as evidence."
+   },
+   {
+    "category": "childcare",
+    "description": "Paid neighbour £40 for childcare for two children",
+    "amount_gbp": 40,
+    "for_whom": "patient",
+    "escort_required": false,
+    "evidence": "bank_statement",
+    "justification": "Patient paid for childcare to attend the cancelled operation and holds the bank transfer record."
+   }
+  ],
+  "challenges": [],
+  "evidenceRequests": [],
+  "steps": [
+   {
+    "tool": "add_line",
+    "summary": "line 0: travel \"68 miles driven to Northfield hospital and back\" -> payable",
+    "at": "2026-10-02T01:47:51.097Z"
+   },
+   {
+    "tool": "add_line",
+    "summary": "line 1: parking \"Hospital parking at Northfield\" -> payable",
+    "at": "2026-10-02T01:47:51.097Z"
+   },
+   {
+    "tool": "add_line",
+    "summary": "line 2: wages \"Self-employed lost working day, 8 hours at £22/hour\" -> payable",
+    "at": "2026-10-02T01:47:51.097Z"
+   },
+   {
+    "tool": "add_line",
+    "summary": "line 3: childcare \"Paid neighbour £40 for childcare for two children\" -> payable",
+    "at": "2026-10-02T01:47:51.097Z"
+   },
+   {
+    "tool": "submit_claim",
+    "summary": "submitted for review",
+    "at": "2026-10-02T01:47:59.472Z"
+   }
+  ],
+  "transcript": [
+   {
+    "from": "patient",
+    "text": "I was cancelled at 11am after fasting from midnight. I drove 34 miles each way to Northfield, so 68 miles in total. Parking at the hospital cost 9.50 pounds and I have the ticket. I am self-employed and lost a full working day, 8 hours at 22 pounds an hour, and I can show invoices I had to postpone. I paid a neighbour 40 pounds to look after my two children for the day, and I have the bank transfer.",
+    "at": "2026-10-02T01:47:41.315Z"
+   },
+   {
+    "from": "agent",
+    "text": "Four losses recorded: 68 miles travel, £9.50 parking, 8 hours self-employed wages at £22/hour, and £40 childcare.",
+    "at": "2026-10-02T01:47:59.472Z"
+   }
+  ],
+  "pendingQuestion": null,
+  "questionsAsked": 0,
+  "turns": 1,
+  "model": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "summary": "Four losses recorded: 68 miles travel, £9.50 parking, 8 hours self-employed wages at £22/hour, and £40 childcare.",
+  "priced": {
+   "lines": [
+    {
+     "category": "travel",
+     "description": "68 miles driven to Northfield hospital and back",
+     "evidence": "none",
+     "claimed": 30.6,
+     "amount": 30.6,
+     "status": "payable",
+     "basis": "68 miles at 45p per mile. Paid on the distance stated; no receipt exists for mileage.",
+     "flags": [],
+     "justification": "Patient drove 34 miles each way for the cancelled operation."
+    },
+    {
+     "category": "parking",
+     "description": "Hospital parking at Northfield",
+     "evidence": "ticket",
+     "claimed": 9.5,
+     "amount": 9.5,
+     "status": "payable",
+     "basis": "amount stated by patient. Document cited: ticket. It must be produced if the claim is audited.",
+     "flags": [],
+     "justification": "Patient paid for parking on the day of the cancelled operation and holds the ticket."
+    },
+    {
+     "category": "wages",
+     "description": "Self-employed lost working day, 8 hours at £22/hour",
+     "evidence": "business_records",
+     "claimed": 176,
+     "amount": 176,
+     "status": "payable",
+     "basis": "8 hours at GBP 22.00. Document cited: business records. It must be produced if the claim is audited.",
+     "flags": [],
+     "justification": "Patient is self-employed and lost a full working day due to the cancelled operation, with postponed invoices as evidence."
+    },
+    {
+     "category": "childcare",
+     "description": "Paid neighbour £40 for childcare for two children",
+     "evidence": "bank_statement",
+     "claimed": 40,
+     "amount": 40,
+     "status": "payable",
+     "basis": "amount stated by patient. Document cited: bank statement. It must be produced if the claim is audited.",
+     "flags": [],
+     "justification": "Patient paid for childcare to attend the cancelled operation and holds the bank transfer record."
+    }
+   ],
+   "claimedTotal": 256.1,
+   "payableTotal": 256.1,
+   "heldTotal": 0,
+   "totalCapApplied": false,
+   "questions": [],
+   "summary": "Four losses recorded: 68 miles travel, £9.50 parking, 8 hours self-employed wages at £22/hour, and £40 childcare.",
+   "currency": "GBP"
+  }
+ },
+ "seed-helen": {
+  "status": "needs_input",
+  "narrative": "I took a taxi to the hospital and back because I could not drive after the news, 180 pounds in total, no receipt as the driver did not give one. My sister took the day off work to come with me, she earns 85 pounds an hour and lost the whole day. I also lost two days of my own pay at 70 pounds an hour. Parking was 12 pounds.",
+  "lines": [
+   {
+    "category": "travel",
+    "description": "Taxi to hospital and back",
+    "amount_gbp": 180,
+    "for_whom": "patient",
+    "evidence": "none",
+    "justification": "Patient could not drive after receiving cancellation news",
+    "_soft": true
+   },
+   {
+    "category": "parking",
+    "description": "Hospital parking",
+    "amount_gbp": 12,
+    "for_whom": "patient",
+    "evidence": "none",
+    "justification": "Parking charge incurred on day of cancelled operation"
+   },
+   {
+    "category": "wages",
+    "description": "Patient lost pay for two days",
+    "hourly_rate_gbp": 70,
+    "hours": 16,
+    "for_whom": "patient",
+    "evidence": "none",
+    "justification": "Patient lost two working days due to cancelled operation"
+   }
+  ],
+  "challenges": [],
+  "evidenceRequests": [],
+  "steps": [
+   {
+    "tool": "add_line",
+    "summary": "line 0: travel \"Taxi to hospital and back\" -> challenged [large_fare]",
+    "at": "2026-10-02T01:46:01.580Z"
+   },
+   {
+    "tool": "add_line",
+    "summary": "line 1: parking \"Hospital parking\" -> held",
+    "at": "2026-10-02T01:46:01.580Z"
+   },
+   {
+    "tool": "add_line",
+    "summary": "line 2: wages \"Patient lost pay for two days\" -> review [high_rate]",
+    "at": "2026-10-02T01:46:01.580Z"
+   },
+   {
+    "tool": "ask_patient",
+    "summary": "asked: Was your sister required to accompany you as an escort for medical reasons, or did she come for emotional support?",
+    "at": "2026-10-02T01:46:18.900Z"
+   }
+  ],
+  "transcript": [
+   {
+    "from": "patient",
+    "text": "I took a taxi to the hospital and back because I could not drive after the news, 180 pounds in total, no receipt as the driver did not give one. My sister took the day off work to come with me, she earns 85 pounds an hour and lost the whole day. I also lost two days of my own pay at 70 pounds an hour. Parking was 12 pounds.",
+    "at": "2026-10-02T01:45:45.621Z"
+   },
+   {
+    "from": "agent",
+    "text": "Was your sister required to accompany you as an escort for medical reasons, or did she come for emotional support?",
+    "at": "2026-10-02T01:46:18.900Z"
+   }
+  ],
+  "pendingQuestion": "Was your sister required to accompany you as an escort for medical reasons, or did she come for emotional support?",
+  "questionsAsked": 1,
+  "turns": 1,
+  "model": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "priced": {
+   "lines": [
+    {
+     "category": "travel",
+     "description": "Taxi to hospital and back",
+     "evidence": "none",
+     "claimed": 180,
+     "amount": 0,
+     "status": "challenged",
+     "basis": "amount stated by patient. Waiting for the patient to confirm: A single travel cost of GBP 180.00 is asked to be confirmed.",
+     "flags": [
+      {
+       "code": "large_fare",
+       "severity": "confirm",
+       "text": "A single travel cost of GBP 180.00 is asked to be confirmed."
+      }
+     ],
+     "justification": "Patient could not drive after receiving cancellation news"
+    },
+    {
+     "category": "parking",
+     "description": "Hospital parking",
+     "evidence": "none",
+     "claimed": 12,
+     "amount": 0,
+     "status": "held",
+     "basis": "amount stated by patient. Held: no receipt, payslip or booking confirmation mentioned.",
+     "flags": [],
+     "justification": "Parking charge incurred on day of cancelled operation"
+    },
+    {
+     "category": "wages",
+     "description": "Patient lost pay for two days",
+     "evidence": "none",
+     "claimed": 1120,
+     "amount": 0,
+     "status": "review",
+     "basis": "16 hours at GBP 70.00. Held for a human: An hourly rate of GBP 70.00 is above GBP 45; a human checks it against the payslip.",
+     "flags": [
+      {
+       "code": "high_rate",
+       "severity": "review",
+       "text": "An hourly rate of GBP 70.00 is above GBP 45; a human checks it against the payslip."
+      }
+     ],
+     "justification": "Patient lost two working days due to cancelled operation"
+    }
+   ],
+   "claimedTotal": 1312,
+   "payableTotal": 0,
+   "heldTotal": 1312,
+   "totalCapApplied": false,
+   "questions": [
+    "Was your sister required to accompany you as an escort for medical reasons, or did she come for emotional support?"
+   ],
+   "summary": "",
+   "currency": "GBP"
+  }
+ },
+ "seed-aisha": {
+  "status": "review",
+  "narrative": "My hip replacement was cancelled on the day, after I had arranged a week off. I travelled by train from Leeds to Northfield, return ticket 46.80 pounds and I have the tickets. I booked a childminder for my two children for two days at 55 pounds a day, receipts from her. I lost 2 days of pay, 7.5 hours a day at 14.20 pounds an hour, my employer has confirmed it in a letter.",
+  "lines": [
+   {
+    "category": "travel",
+    "description": "Train return ticket Leeds to Northfield",
+    "amount_gbp": 46.8,
+    "for_whom": "patient",
+    "evidence": "ticket",
+    "justification": "Patient travelled to hospital for cancelled operation and holds the tickets."
+   },
+   {
+    "category": "childcare",
+    "description": "Childminder for two children, two days at £55/day",
+    "amount_gbp": 110,
+    "evidence": "receipt",
+    "justification": "Patient arranged childcare for the operation day and recovery, has receipts from childminder."
+   },
+   {
+    "category": "wages",
+    "description": "Lost wages: 2 days at 7.5 hours/day, £14.20/hour",
+    "hours": 15,
+    "hourly_rate_gbp": 14.2,
+    "for_whom": "patient",
+    "evidence": "employer_letter",
+    "justification": "Patient took unpaid leave for the operation and has employer confirmation letter."
+   }
+  ],
+  "challenges": [],
+  "evidenceRequests": [],
+  "steps": [
+   {
+    "tool": "add_line",
+    "summary": "line 0: travel \"Train return ticket Leeds to Northfield\" -> payable",
+    "at": "2026-10-02T01:46:39.113Z"
+   },
+   {
+    "tool": "add_line",
+    "summary": "line 1: childcare \"Childminder for two children, two days at £55/day\" -> payable",
+    "at": "2026-10-02T01:46:39.113Z"
+   },
+   {
+    "tool": "add_line",
+    "summary": "line 2: wages \"Lost wages: 2 days at 7.5 hours/day, £14.20/hour\" -> payable",
+    "at": "2026-10-02T01:46:39.113Z"
+   },
+   {
+    "tool": "submit_claim",
+    "summary": "submitted for review",
+    "at": "2026-10-02T01:46:53.839Z"
+   }
+  ],
+  "transcript": [
+   {
+    "from": "patient",
+    "text": "My hip replacement was cancelled on the day, after I had arranged a week off. I travelled by train from Leeds to Northfield, return ticket 46.80 pounds and I have the tickets. I booked a childminder for my two children for two days at 55 pounds a day, receipts from her. I lost 2 days of pay, 7.5 hours a day at 14.20 pounds an hour, my employer has confirmed it in a letter.",
+    "at": "2026-10-02T01:46:18.900Z"
+   },
+   {
+    "from": "agent",
+    "text": "Three losses recorded: train travel £46.80, childcare £110.00, and lost wages £213.00, all supported by documents held by patient.",
+    "at": "2026-10-02T01:46:53.839Z"
+   }
+  ],
+  "pendingQuestion": null,
+  "questionsAsked": 0,
+  "turns": 1,
+  "model": "us.anthropic.claude-sonnet-4-5-20250929-v1:0",
+  "summary": "Three losses recorded: train travel £46.80, childcare £110.00, and lost wages £213.00, all supported by documents held by patient.",
+  "priced": {
+   "lines": [
+    {
+     "category": "travel",
+     "description": "Train return ticket Leeds to Northfield",
+     "evidence": "ticket",
+     "claimed": 46.8,
+     "amount": 46.8,
+     "status": "payable",
+     "basis": "amount stated by patient. Document cited: ticket. It must be produced if the claim is audited.",
+     "flags": [],
+     "justification": "Patient travelled to hospital for cancelled operation and holds the tickets."
+    },
+    {
+     "category": "childcare",
+     "description": "Childminder for two children, two days at £55/day",
+     "evidence": "receipt",
+     "claimed": 110,
+     "amount": 110,
+     "status": "payable",
+     "basis": "amount stated by patient. Document cited: receipt. It must be produced if the claim is audited.",
+     "flags": [],
+     "justification": "Patient arranged childcare for the operation day and recovery, has receipts from childminder."
+    },
+    {
+     "category": "wages",
+     "description": "Lost wages: 2 days at 7.5 hours/day, £14.20/hour",
+     "evidence": "employer_letter",
+     "claimed": 213,
+     "amount": 213,
+     "status": "payable",
+     "basis": "15 hours at GBP 14.20. Document cited: employer letter. It must be produced if the claim is audited.",
+     "flags": [],
+     "justification": "Patient took unpaid leave for the operation and has employer confirmation letter."
+    }
+   ],
+   "claimedTotal": 369.8,
+   "payableTotal": 369.8,
+   "heldTotal": 0,
+   "totalCapApplied": false,
+   "questions": [],
+   "summary": "Three losses recorded: train travel £46.80, childcare £110.00, and lost wages £213.00, all supported by documents held by patient.",
+   "currency": "GBP"
+  }
+ }
+}
