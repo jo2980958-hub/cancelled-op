@@ -251,7 +251,7 @@ The inflated claim: **£1,992 claimed, £0 payable** until the patient answers. 
 
 ## 5. Webhooks: signature verification, tampering, replay
 
-The deployed Lambda logs every delivery. These are **real PayPal-signed events** it captured (many belong to sibling projects sharing this PayPal app; the Lambda answers them `200` as unmatched). They are replayed against PayPal's `verify-webhook-signature` and against the deployed endpoint.
+The deployed Lambda logs every delivery. These are **real PayPal-signed events** it captured (many belong to other listeners on the same app, projects sharing this PayPal app; the Lambda answers them `200` as unmatched). They are replayed against PayPal's `verify-webhook-signature` and against the deployed endpoint.
 
 ```
    > 17 verified deliveries captured; using PAYMENT.PAYOUTS-ITEM.UNCLAIMED WH-2M101335TF4161801-74218030EA1768800
